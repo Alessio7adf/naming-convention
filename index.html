@@ -21,8 +21,10 @@
 
 		nomeF = nome.value.toLowerCase();
 		nomeF = nomeF.replaceAll(" ", "-");
+		
+		libroF = libro.value.replaceAll(" ", "-");
 
-		nomeFile = `${classe.value.toLowerCase()}-${anno}_${materia.value}_${tipo.value}_${cognomeF}_${nomeF}_${consegna.value}_${libro.value.toLowerCase()}_pg${pagina.value}-es${esercizio.value}`;
+		nomeFile = `${classe.value.toLowerCase()}-${anno}_${materia.value}_${tipo.value}_${cognomeF}_${nomeF}_${consegna.value}_${libroF.toLowerCase()}_pg${pagina.value}-es${esercizio.value}`;
 
 		document.getElementById("nome-file").value = nomeFile;
 	}
